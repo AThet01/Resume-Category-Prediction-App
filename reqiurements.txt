@@ -17,7 +17,6 @@ threadpoolctl
 tzdata
 Werkzeug
 streamlit
-python-docx
 PyPDF2
 scikit-learn
 pandas
