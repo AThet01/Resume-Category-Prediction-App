@@ -1,6 +1,6 @@
 import streamlit as st
 import pickle
-import python_docx
+import docx
 import PyPDF2  # Extract text from PDF
 import re
 
