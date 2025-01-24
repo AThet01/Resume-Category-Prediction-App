@@ -1,6 +1,6 @@
 import streamlit as st
 import pickle
-import docx
+#import docx
 import PyPDF2  # Extract text from PDF
 import re
 
@@ -23,7 +23,7 @@ def cleanResume(txt):
 
 
 # Function to extract text from PDF
-from docx import Document
+#from docx import Document
 def extract_text_from_pdf(file):
     pdf_reader = PyPDF2.PdfReader(file)
     text = ''
@@ -33,12 +33,12 @@ def extract_text_from_pdf(file):
 
 
 # Function to extract text from DOCX
-def extract_text_from_docx(file):
-    doc = docx.Document(file)
-    text = ''
-    for paragraph in doc.paragraphs:
-        text += paragraph.text + '\n'
-    return text
+#def extract_text_from_docx(file):
+    #doc = docx.Document(file)
+    #text = ''
+    #for paragraph in doc.paragraphs:
+       # text += paragraph.text + '\n'
+    #return text
 
 
 # Function to extract text from TXT with explicit encoding handling
@@ -91,10 +91,10 @@ def main():
     st.set_page_config(page_title="Resume Category Prediction", page_icon="📄", layout="wide")
 
     st.title("Resume Category Prediction App")
-    st.markdown("Upload a resume in PDF, TXT, or DOCX format and get the predicted job category.")
+    st.markdown("Upload a resume in PDF or TXT format and get the predicted job category.")
 
     # File upload section
-    uploaded_file = st.file_uploader("Upload a Resume", type=["pdf", "docx", "txt"])
+    uploaded_file = st.file_uploader("Upload a Resume", type=["pdf", "txt"])
 
     if uploaded_file is not None:
         # Extract text from the uploaded file
