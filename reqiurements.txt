@@ -20,6 +20,5 @@ streamlit
 PyPDF2
 scikit-learn
 pandas
-Flask
-gunicorn
+
 
