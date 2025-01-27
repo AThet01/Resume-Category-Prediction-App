@@ -4,6 +4,17 @@ import pickle
 import PyPDF2  # Extract text from PDF
 import re
 
+import http.server
+import socketserver
+
+PORT = 8000
+
+Handler = http.server.SimpleHTTPRequestHandler
+
+with socketserver.TCPServer(("", PORT), Handler) as httpd:
+    print(f"Serving at port {PORT}")
+    httpd.serve_forever()
+
 # Load pre-trained model and TF-IDF vectorizer (ensure these are saved earlier)
 svc_model = pickle.load(open('clf.pkl', 'rb'))  # Example file name, adjust as needed
 tfidf = pickle.load(open('tfidf.pkl', 'rb'))  # Example file name, adjust as needed
