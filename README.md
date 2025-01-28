@@ -1,11 +1,10 @@
-## Project Title:
-# Resume Category Prediction App
+## Project Title:Resume Category Prediction App
 
 !! Still not getting app and still trying !!
 !! Open Source if u want to try !!
 
 Short Description:
-- A web application that predicts the category (e.g., job type or role) of a resume based on the content provided by the user.
+ -  A web application that predicts the category (e.g., job type or role) of a resume based on the content provided by the user.
 
 Detailed Description:
 
