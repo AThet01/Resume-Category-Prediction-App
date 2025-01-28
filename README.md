@@ -25,19 +25,19 @@ Detailed Description:
 - Error Handling: The app includes error handling for various edge cases like incorrect file formats or decoding issues.
 
 # Technologies Used:
-Python: The main programming language for app development.
-Streamlit: Used for building the web interface for users to interact with the app.
-scikit-learn: A machine learning library used for model training and prediction.
-TF-IDF (Term Frequency-Inverse Document Frequency): A technique for transforming resume text into features that the machine learning model can process.
-Natural Language Processing (NLP): Used for cleaning and preprocessing the resume text (e.g., removing stop words, stemming).
-Pandas & Numpy: Used for data manipulation and processing.
-Joblib: Used for saving and loading the trained machine learning model.
+- Python: The main programming language for app development.
+- Streamlit: Used for building the web interface for users to interact with the app.
+- scikit-learn: A machine learning library used for model training and prediction.
+- TF-IDF (Term Frequency-Inverse Document Frequency): A technique for transforming resume text into features that the machine learning model can process.
+- Natural Language Processing (NLP): Used for cleaning and preprocessing the resume text (e.g., removing stop words, stemming).
+- Pandas & Numpy: Used for data manipulation and processing.
+- Joblib: Used for saving and loading the trained machine learning model.
 
 # Steps Involved:
-Data Collection: Gather a dataset of resumes, ideally labeled by job categories.
-Data Preprocessing: Clean the text, remove stop words, and apply text vectorization (TF-IDF).
-Model Training: Train a machine learning model on the preprocessed data to classify resumes into categories.
-Deployment: Deploy the app using Streamlit to allow users to interact with the model and upload resumes for predictions.
+- Data Collection: Gather a dataset of resumes, ideally labeled by job categories.
+- Data Preprocessing: Clean the text, remove stop words, and apply text vectorization (TF-IDF).
+- Model Training: Train a machine learning model on the preprocessed data to classify resumes into categories.
+- Deployment: Deploy the app using Streamlit to allow users to interact with the model and upload resumes for predictions.
 
 # Example Use Case:
 A recruiter can upload a resume to the app, and it will predict whether the resume is suited for a "Data Scientist", "Software Engineer", or any other pre-defined role, helping recruiters sort resumes faster and more efficiently.
