@@ -1,5 +1,5 @@
 ## Project Title:
-#Resume Category Prediction App
+# Resume Category Prediction App
 
 !! Still not getting app and still trying !!
 !! Open Source if u want to try !!
